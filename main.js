@@ -27,6 +27,11 @@ function TextBoxPage() {
         display: "flex",
         justifyContent: "flex-end",
         alignItems: "flex-end"
+        margin: 0,
+        padding: "36px 48px",
+        display: "flex",
+        justifyContent: "flex-end",
+        alignItems: "center"
       }
     },
     React.createElement(
@@ -95,6 +100,60 @@ function TextBoxPage() {
         "➤"
     )
 )
+
+         style: {
+          width: "58%",
+          maxWidth: "780px",
+          minWidth: "360px",
+          height: "66vh",
+          minHeight: "420px",
+          padding: "20px",
+          backgroundColor: "rgba(10, 28, 58, 0.65)",
+          border: "2px solid #29b6f6",
+          borderRadius: "20px",
+          display: "flex",
+          alignItems: "flex-end",
+          gap: "12px"
+        }
+        
+      },
+      React.createElement("input", {
+        type: "text",
+        placeholder: "Type your message...",
+        style: {
+          flex: 1,
+          height: "48px",
+          padding: "0 18px",
+          fontSize: "15px",
+          backgroundColor: "rgba(10, 28, 58, 0.65)",
+          border: "2px solid #29b6f6",
+          borderRadius: "20px",
+          display: "flex",
+          alignItems: "flex-end",
+          gap: "12px"
+        }
+      }),
+      React.createElement(
+        "button",
+        {
+          type: "submit",
+          "aria-label":"Send message",
+            style: {
+            height: "48px",
+            padding: "14 14px",
+            fontSize: "15px",
+            cursor: "pointer",
+            colour: "#fafafa",
+            backgroundColor: "rgba(24, 168, 197, 0.72)",
+            backgroundColor: "rgba(173, 216, 230, 0.65)",
+            border: "2px solid #29b6f6",
+            borderRadius: "22px",
+            display: "flex",
+            flexshrink: 0,
+          }
+        },
+        "➤"
+      )
     )
   );
 }
